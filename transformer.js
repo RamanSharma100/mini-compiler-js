@@ -10,7 +10,7 @@ const transformer = (ast) => {
 
   traverse(ast, {
     NumberLiteral(node) {
-      newAst.body.push({
+      position.push({
         type: "NumberLiteral",
         value: node.value,
       });
